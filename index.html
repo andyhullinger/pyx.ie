@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<title>Become A Pyxie | Join NUIG Dram Soc Stage Crew</title>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100&text=THCUBEAR' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="form.css">
+
+  <style>
+
+
+* { margin: 0;padding: 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+
+.login { 
+ /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;*/
+  /*width:300px;
+  height:300px;*/
+}
+
+
+body{
+background: url(http://farm3.staticflickr.com/2624/5818226454_1f3456a2d9_b.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+background-color: black;
+}
+
+
+/* keyframes for rotating animation */
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateY(0); }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+@-webkit-keyframes rise {
+  from { top:0; }
+  to   { top:-120px; }
+
+}
+
+
+/* scene wrapper */
+.logo{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2em;
+  position:relative;
+  -webkit-perspective: 600;
+  -webkit-perspective-origin: 50% 200px;
+  text-align: center;
+  height: 120px;
+}
+
+/* cube wrapper */
+.cube{
+  position: relative;
+  margin: -80px auto;
+  width: 100px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 4s infinite linear;
+/*  -webkit-transition: all 1s linear;
+*/  -webkit-backface-visibility:hidden;
+
+}
+
+/* outer cube */
+b{
+  position:absolute;
+  width:100px;
+  height:100px;
+  display:block;
+  background:rgba(0,0,0,1);
+  box-shadow:inset 3px 3px 20px rgba(255,255,255,.5), inset -3px -3px 20px rgba(255,255,255,.5) ;
+  text-align:center;
+  font-size:0px;
+  line-height:0px;
+  color:rgba(255,255,255,0);
+  text-transform:uppercase;
+  border:1px solid white;
+ -webkit-transition: all 1s linear;
+
+}
+b.back{
+  -webkit-transform: translateZ(-50px) rotateY(180deg);
+}
+b.right{
+  -webkit-transform:rotateY(-270deg) translateX(50px);
+  -webkit-transform-origin: top right;
+}
+b.left{
+  -webkit-transform:rotateY(270deg) translateX(-50px);
+  -webkit-transform-origin: center left;
+}
+b.top{
+  -webkit-transform:rotateX(-90deg) translateY(-50px);
+  -webkit-transform-origin: top center;
+}
+b.bottom{
+  -webkit-transform:rotateX(90deg) translateY(50px);
+  -webkit-transform-origin: bottom center;
+}
+b.front{
+  -webkit-transform: translateZ(50px);
+}
+
+/* inner cube */
+i{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:90px;
+  height:90px;
+  display:block;
+/*  -webkit-transition: all 1s linear;*/
+  -webkit-animation: rise 1s 1 ease-out forwards 4s;
+
+}
+i.front{
+  -webkit-transform: translateZ(1px) rotateY(45deg);
+    background:url(img/dramsocsmall-w.png);
+      background-size: cover;
+
+
+}
+i.back{
+  -webkit-transform: translateZ(-1px) rotateY(225deg);
+    background:url(img/dramsocsmallalt-w.png);
+      background-size: cover;
+
+
+}
+
+
+/* hover -webkit-transformations */
+/*.cube:hover{
+  top:100px;
+}*/
+
+/*.cube:hover i{
+  top:-120px;
+}*/
+
+
+h1{font-weight: normal;text-indent: -.33em;background-color: rgba(249,209,156,0.3);
+text-shadow: -1px -1px 5px rgba(249,209,156,0.4), 1px 1px 5px rgba(249,209,156,0.4), 0 0 10px rgba(249,209,156,0.4); box-shadow: 10px 0 20px  3px black;}
+h1>span{margin-left: 170px;}
+h1>small{font-size: inherit;
+  font-weight: normal; margin-right: .2em;}
+
+.header{margin-top: 150px;}
+article{
+  padding: 0 50px;
+  width:70%; margin:auto;
+  color: white;
+font-family: Georgia, serif;
+text-shadow: -3px -3px 10px black, 3px 3px 10px black;
+/*background-color: rgba(0,0,0,.6);*/
+}
+
+h2{font-size: 32px;padding-top: 30px;padding-bottom: 10px;}
+
+
+h3{font-size: 0;color: transparent;text-indent: -9999px;
+background: url(img/nuig.png);
+position: absolute;
+top: -100px;right: 30px;
+width: 195px;height: 60px;
+}
+
+body{min-width: 480px}
+
+p{font-size: 28px;font-style: italic;margin-bottom: 20px;}
+form{text-align: center;}
+
+@media all and (max-width: 720px) {
+  .logo{margin-top: 180px;margin-bottom: -30px;}
+  h1{font-size: 1em;}
+  p{font-size: 22px;}
+input{width:100%;}
+input+input{margin-left:0}
+
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="logo header">
+  <h3>NUI Galway</h3>
+  <h1><small>THE</small>CUBE<span>THEATER</span></h1>
+  <div class="cube">
+    <b class="left">C</b>
+    <b class="front">U</b>
+    <b class="right">B</b>
+    <b class="back">E</b>
+    <b class="bottom"></b>
+    <i class="front"></i>
+    <i class="back"></i>
+  </div>
+</div>
+
+  <article>
+  <h2>Wanna Make A Scene?!</h2>
+<p>Join our production team today and start learning the art of stagecraft tomorrow. You bring the talent (or just tenacity) and we&rsquo;ll provide all the tools and training. Have fun building and painting as you help create and construct amazing spaces to bring the Cube Theater to life.</p>
+
+
+
+<div class="login">
+    <form method="post" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+  action="https://pyxie.wufoo.com/forms/mi2baw90vz2mdg/#public">
+  <input type="hidden" name="idstamp" id="idstamp" value="GJtRFF9uP1dmdIG6QQ5uenh7OycaO8bYVa5L+kggV3Q=" />
+      <input name="Field14" type="text" placeholder="Name/Anim" required="required" maxlength="255" tabindex="1" onkeyup="" />
+        <input name="Field3" type="email" placeholder="Email/Post-d" required="required" maxlength="255" tabindex="2" onkeyup="" />
+        <button id="saveForm" name="saveForm" src="http://www.andyhullinger.com/pyx.ie/img/submit.png" type="submit" class="btn btn-primary btn-large">Join Stage Crew!</button>
+    </form>
+</div>
+
+</article>
+
+  <script src="scripts/wufoo.js"></script>
+
+</body>
+
+
+</html>
